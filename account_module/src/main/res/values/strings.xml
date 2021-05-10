@@ -1,0 +1,11 @@
+<resources>
+
+
+    <string name="enable_location_tracking">Enable location tracking</string>
+    <string name="clear_location_history">Clear location history</string>
+    <string name="exit_from_account"> Exit from Account</string>
+    <string name="hello_user_name">hello_user_name</string>
+    <string name="deleted">Deleted</string>
+
+
+</resources>

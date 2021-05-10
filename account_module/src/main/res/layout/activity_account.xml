@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.AccountActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dp_50"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/res_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/size_dp_50"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/size_sp_20" />
+
+        <Switch
+            android:id="@+id/location_tracking_switch"
+            android:layout_width="@dimen/size_dp_300"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_location_tracking"
+            android:textSize="@dimen/size_sp_20"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <RelativeLayout
+            android:id="@+id/separate_line"
+            android:layout_width="@dimen/size_dp_300"
+            android:layout_height="@dimen/size_dp_1"
+            android:layout_marginVertical="@dimen/size_dp_5"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/clear_loc_lay"
+            android:layout_width="@dimen/size_dp_300"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/clear_location_history"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_sp_20"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageButton
+                android:id="@+id/clear_loc_history_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size_dp_10"
+                android:background="@drawable/ic_delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/separate_line2"
+            android:layout_width="@dimen/size_dp_300"
+            android:layout_height="@dimen/size_dp_1"
+            android:layout_marginVertical="@dimen/size_dp_5"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/location_tracking_switch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clear_loc_lay" />
+
+
+        <RelativeLayout
+            android:id="@+id/exit_btn"
+            android:layout_width="@dimen/size_dp_300"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/exit_from_account"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_sp_20" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size_dp_10"
+                android:background="@drawable/ic_exit" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

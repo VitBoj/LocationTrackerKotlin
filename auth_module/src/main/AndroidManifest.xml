@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.auth_module">
+
+    <application>
+        <activity android:name=".registration.RegistrationActivity"/>
+        <activity android:name=".login.LoginActivity" />
+    </application>
+
+
+</manifest>

@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="log_in">Log In</string>
+    <string name="empty_fields">Empty fields</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="please_wait">Please wait</string>
+    <string name="user_name">User name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="please_try_again">User not saved,please try again</string>
+
+</resources>

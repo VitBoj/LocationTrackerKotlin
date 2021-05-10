@@ -1,0 +1,7 @@
+include ':account_module'
+include ':auth_module'
+include ':navigation_module'
+include ':firebase_module'
+include ':location_module'
+include ':app'
+rootProject.name = "LocationTrackerKotlinVersion"
